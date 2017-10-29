@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="smontw.EnterCont">
+   <children>
+      <SplitPane dividerPositions="0.5" layoutX="41.0" layoutY="7.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <SplitPane dividerPositions="0.29797979797979796" layoutX="14.0" prefHeight="160.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fitHeight="302.0" fitWidth="349.0" layoutX="-2.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@sing2.jpg" />
+                                 </image>
+                              </ImageView>
+                              <TextField fx:id="duran" layoutX="9.0" layoutY="49.0" opacity="0.86" prefHeight="25.0" prefWidth="149.0" promptText="Duration in hrs" text="Duration in hrs" />
+                              <TextField fx:id="acco" layoutX="9.0" layoutY="85.0" opacity="0.86" promptText="Accolades" />
+                              <Text fill="#fffdfd" layoutX="9.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Extra Curriculars">
+                                 <font>
+                                    <Font name="Berlin Sans FB Bold" size="12.0" />
+                                 </font></Text>
+                              <TextField fx:id="real" layoutX="9.0" layoutY="126.0" opacity="0.86" promptText="Performance outside" />
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fitHeight="285.0" fitWidth="434.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@sports1.jpg" />
+                                 </image>
+                              </ImageView>
+                              <TextField fx:id="durs" layoutX="48.0" layoutY="47.0" opacity="0.83" promptText="Durations in hrs" />
+                              <TextField fx:id="medal" layoutX="48.0" layoutY="85.0" opacity="0.83" promptText="Medals won" />
+                              <TextField fx:id="level" layoutX="48.0" layoutY="126.0" opacity="0.83" promptText="Representation level" />
+                              <Text layoutX="48.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sports">
+                                 <font>
+                                    <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                 </font></Text>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children></AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <SplitPane layoutX="105.0" layoutY="18.0" prefHeight="160.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fitHeight="196.0" fitWidth="237.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@marks1.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="196.0" fitWidth="237.0" layoutX="347.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@marks2.png" />
+                                 </image>
+                              </ImageView>
+                              <TextField fx:id="marks" layoutX="14.0" layoutY="55.0" opacity="0.78" promptText="Subject 1" />
+                              <Text layoutX="14.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Marks">
+                                 <font>
+                                    <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                                 </font></Text>
+                              <TextField fx:id="marks1" layoutX="14.0" layoutY="111.0" opacity="0.78" promptText="Subject 2" />
+                              <TextField fx:id="marks11" layoutX="370.0" layoutY="111.0" opacity="0.78" promptText="Subject 4" />
+                              <TextField fx:id="marks111" layoutX="370.0" layoutY="55.0" opacity="0.78" promptText="Subject 3" />
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+      <Button fx:id="saveb" layoutX="555.0" layoutY="2.0" mnemonicParsing="false" onAction="#handlessvButtonAction" prefHeight="400.0" prefWidth="54.0" text="SAVE" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Corbel Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+   </children>
+</AnchorPane>

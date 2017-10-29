@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="335.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="smontw.v1Controller">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <SplitPane dividerPositions="0.5" layoutX="-172.0" layoutY="14.0" prefHeight="335.0" prefWidth="692.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <ImageView fitHeight="510.0" fitWidth="659.0" layoutX="-40.0" layoutY="-35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@wall2.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="41.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SeeMeOnTheWhole">
+                     <font>
+                        <Font name="Segoe UI Bold" size="22.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#fbff00" layoutX="106.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thank you for reading this. This is not about the product." />
+                  <Text fill="#e1ff00" layoutX="93.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This is about changing how we judge students. Thanks again for choosing the right way,">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#fff800" layoutX="75.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" the right way, not evaluating only on the basis of studies, but on the" />
+                  <Text fill="#f5e4ff" layoutX="82.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WHOLE">
+                     <font>
+                        <Font name="Bodoni MT Bold Italic" size="34.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <ImageView fitHeight="477.0" fitWidth="588.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@wall3.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="sbutton" layoutX="73.0" layoutY="181.0" onAction="#handlesButtonAction" prefHeight="55.0" prefWidth="110.0" text="See Data">
+                     <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Button fx:id="button" layoutX="73.0" layoutY="103.0" onAction="#handleButtonAction" prefHeight="55.0" prefWidth="110.0" text="New Data">
+                     <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+    </children>
+</AnchorPane>
